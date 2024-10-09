@@ -96,48 +96,57 @@ const HeroSection = ({ scrollToDemo }) => {
               </div>
             </div>
 
-            <div className="w-1/3 rightsection  rounded-r-lg text-white">
-              <div className="grid place-content-center place-items-center grid-cols-1 justify-center items-center lg:pt-14">
-                <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 transition duration-300">
-                  <MdEmail className="text-4xl text-black transition duration-300 hover:opacity-0" />
-                </div>
-
-                <div className="mb-20">
+            <div className="w-full md:w-1/3 rightsection rounded-r-lg text-white">
+              <div className="grid place-content-center place-items-center grid-cols-1 justify-center items-center lg:pt-14 gap-8">
+                {/* Email Icon */}
+                <a
+                  href="mailto:contact@seer-inc.com"
+                  className="flex flex-col items-center group"
+                >
+                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 transition duration-300 hover:bg-gray-300 cursor-pointer">
+                    <MdEmail className="text-4xl text-black transition duration-300" />
+                  </div>
                   <p
                     style={{ fontFamily: "roboto" }}
-                    className="gmail inc text-white mt-2 lg:pl-0"
+                    className="gmail inc text-white mt-2 lg:pl-0 text-center"
                   >
-                    <a href="mailto:contact@seer-inc.com" className="text-white">
-                      contact@seer-inc.com
-                    </a>
+                    contact@seer-inc.com
                   </p>
-                </div>
+                </a>
 
-                <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 transition duration-300">
-                  <MdContactPhone className="text-4xl text-black transition duration-300 hover:opacity-0" />
-                </div>
-                <div className="mb-20">
+                {/* Phone Icon */}
+                <a
+                  href="tel:+6498892409"
+                  className="flex flex-col items-center group"
+                >
+                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 transition duration-300 hover:bg-gray-300 cursor-pointer">
+                    <MdContactPhone className="text-4xl text-black transition duration-300" />
+                  </div>
                   <p
                     style={{ fontFamily: "roboto" }}
-                    className="text-white gmail  mt-2"
+                    className="text-white gmail mt-2 text-center"
                   >
-                    <a href="tel:+6498892409" className="text-white con">
-                      +6498892409
-                    </a>
+                    +6498892409
                   </p>
-                </div>
+                </a>
 
-                <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 transition duration-300">
-                  <FaMapLocationDot className="text-4xl text-black transition duration-300 hover:opacity-0" />
-                </div>
-                <div className="mb-20">
+                {/* Location Icon */}
+                <a
+                  href="https://www.google.com/search?q=seer+inc&sca_esv=998424606ab613e9&rlz=1C1RXQR_en-GBIN1072IN1072&ei=sm8GZ4GYK-KcseMP4bHwmAU&ved=0ahUKEwiBuYKvn4GJAxViTmwGHeEYHFMQ4dUDCA8&uact=5&oq=seer+inc&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHNlZXIgaW5jMgsQABiABBiRAhiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi3EFDlDFiJDnACeAGQAQCYAc0BoAGGA6oBBTAuMS4xuAEDyAEA-AEBmAIDoALOAcICChAAGLADGNYEGEeYAwCIBgGQBgiSBwMyLjGgB5UM&sclient=gws-wiz-serp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex flex-col items-center group"
+                >
+                  <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 transition duration-300 hover:bg-gray-300 cursor-pointer">
+                    <FaMapLocationDot className="text-4xl text-black transition duration-300" />
+                  </div>
                   <p
                     style={{ fontFamily: "roboto" }}
-                    className="text-white text-center  gmail mt-1"
+                    className="text-white text-center gmail mt-1"
                   >
                     Auckland, <br /> New Zealand
                   </p>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -145,8 +154,16 @@ const HeroSection = ({ scrollToDemo }) => {
       </div>
 
       <div className="HeroSectionBgImg">
-        <img src="https://bookonelocal.in/cdn/Seer_Oracle.svg" alt="hero" className="desktop-image" />
-        <img src="https://bookonelocal.in/cdn/Seer_Oracle_phone.svg" alt="hero" className="mobile-image" />
+        <img
+          src="https://bookonelocal.in/cdn/Seer_Oracle.svg"
+          alt="hero"
+          className="desktop-image"
+        />
+        <img
+          src="https://bookonelocal.in/cdn/Seer_Oracle_phone.svg"
+          alt="hero"
+          className="mobile-image"
+        />
       </div>
     </div>
   );

@@ -104,8 +104,7 @@ const VideoSection = () => {
 
         <div className="videoSectionRightSection">
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=9uXpgjIF-3c"
-            // playing={playing}
+            url="https://www.youtube.com/watch?v=m_1cEYQ8ZmI"
             controls={true}
           />
         </div>

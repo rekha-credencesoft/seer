@@ -6,7 +6,7 @@ import LinkedIn from "../../assets/images/LinkedIn.png";
 import Message from "../../assets/images/Message.png";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { MdContactPhone, MdEmail } from "react-icons/md";
-
+import { FaYoutube } from "react-icons/fa";
 const Contact = () => {
   return (
     <div className="ContactContainer  bg-[#edeeff] pb-10 md:pb-0 lg:pb-0">
@@ -32,11 +32,37 @@ const Contact = () => {
             <span>Email:</span> contact@seer-inc.com
           </p>
         </div>
+
         <div className="ContactLeftSectionIcons">
-          <img src={Faceboook} alt="facebook" />
-          <img src={Google} alt="Google" />
-          <img src={LinkedIn} alt="LinkedIn" />
-          <img src={Message} alt="Message" />
+          {/* <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Faceboook} alt="facebook" className="w-12 h-12" />
+          </a> */}
+          <a
+            href="https://www.google.com/search?q=seer+inc&sca_esv=998424606ab613e9&rlz=1C1RXQR_en-GBIN1072IN1072&ei=sm8GZ4GYK-KcseMP4bHwmAU&ved=0ahUKEwiBuYKvn4GJAxViTmwGHeEYHFMQ4dUDCA8&uact=5&oq=seer+inc&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHNlZXIgaW5jMgsQABiABBiRAhiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi3EFDlDFiJDnACeAGQAQCYAc0BoAGGA6oBBTAuMS4xuAEDyAEA-AEBmAIDoALOAcICChAAGLADGNYEGEeYAwCIBgGQBgiSBwMyLjGgB5UM&sclient=gws-wiz-serp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={Google} alt="Google" className="w-12 h-12" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/company/seer-inc/about/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={LinkedIn} alt="LinkedIn" className="w-12 h-12" />
+          </a>
+
+          <a
+            href="https://www.youtube.com/@Seer-Inc"
+            className="flex items-center justify-center w-10 h-10 bg-red-600 rounded-full"
+          >
+            <FaYoutube className="text-white w-8 h-8" />
+          </a>
         </div>
       </div>
 
@@ -87,6 +113,7 @@ const Contact = () => {
                 rows="5"
               ></textarea>
             </div>
+
             <div className="pt-2 pb-6">
               <button
                 className="text-lg text-white bg-[#22bbff] px-4 py-1 rounded-lg 
@@ -97,32 +124,45 @@ const Contact = () => {
               </button>
             </div>
           </div>
+
           <div className="flex rightsec justify-center rounded-r-lg items-center">
-            <div className=" px-2 md:10  text-[10px] md:text-[15px] rounded-r-lg text-white flex flex-col justify-center items-center text-center h-full space-y-10 lg:space-y-20 md:space-y-14">
+            <div className="px-2 md:10 text-[10px] md:text-[15px] rounded-r-lg text-white flex flex-col justify-center items-center text-center h-full space-y-10 lg:space-y-20 md:space-y-14">
               <div className="flex flex-col items-center">
-                <MdEmail size={60} />
+                <a href="mailto:contact@seer-inc.com" className="text-white">
+                  <MdEmail size={60} />
+                </a>
                 <p
                   style={{ fontFamily: "roboto" }}
                   className="pt-1 text-white text-[10px] md:text-[15px]"
                 >
-                  <a href="mailto:contact@seer-inc.com" className="text-white text-[10px] md:text-[15px]">
+                  <a href="mailto:contact@seer-inc.com" className="text-white">
                     contact@seer-inc.com
                   </a>
                 </p>
               </div>
+
               <div className="flex flex-col items-center">
-                <MdContactPhone size={60} />
+                <a href="tel:+6498892409" className="text-white">
+                  <MdContactPhone size={60} />
+                </a>
                 <p
                   style={{ fontFamily: "roboto" }}
                   className="text-white pt-2 text-[10px] md:text-[15px]"
                 >
-                  <a href="tel:+6498892409" className="text-white text-[10px] md:text-[15px]">
+                  <a href="tel:+6498892409" className="text-white">
                     +6498892409
                   </a>
                 </p>
               </div>
+
               <div className="flex flex-col items-center">
-                <FaMapLocationDot size={60} />
+                <a
+                  href="https://www.google.com/search?q=seer+inc&sca_esv=998424606ab613e9&rlz=1C1RXQR_en-GBIN1072IN1072&ei=sm8GZ4GYK-KcseMP4bHwmAU&ved=0ahUKEwiBuYKvn4GJAxViTmwGHeEYHFMQ4dUDCA8&uact=5&oq=seer+inc&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHNlZXIgaW5jMgsQABiABBiRAhiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi3EFDlDFiJDnACeAGQAQCYAc0BoAGGA6oBBTAuMS4xuAEDyAEA-AEBmAIDoALOAcICChAAGLADGNYEGEeYAwCIBgGQBgiSBwMyLjGgB5UM&sclient=gws-wiz-serp"
+                  target="_blank"
+                  className="text-white"
+                >
+                  <FaMapLocationDot size={60} />
+                </a>
                 <p
                   style={{ fontFamily: "roboto" }}
                   className="text-white pt-1 text-[10px] md:text-[15px]"
@@ -132,8 +172,6 @@ const Contact = () => {
               </div>
             </div>
           </div>
-
-
         </div>
       </div>
     </div>
