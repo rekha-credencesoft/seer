@@ -29,8 +29,8 @@ const Contact = () => {
           <p style={{ fontFamily: "roboto" }}>
             <span>Address:</span> Auckland, New Zealand
           </p>
-          <p style={{ fontFamily: "roboto" }}>
-            <span>Email:</span> contact@seer-inc.com
+          <p style={{ fontFamily: "roboto", cursor:"pointer" }}>
+            <span>Email:</span>  <a href="mailto:contact@seer-inc.com">contact@seer-inc.com</a>
           </p>
         </div>
 
