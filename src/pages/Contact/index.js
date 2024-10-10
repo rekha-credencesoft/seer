@@ -3,10 +3,11 @@ import "./index.css";
 import Faceboook from "../../assets/images/Facebook.png";
 import Google from "../../assets/images/Google.png";
 import LinkedIn from "../../assets/images/LinkedIn.png";
-import Message from "../../assets/images/Message.png";
+
+import YouTube from "../../assets/images/youtube.png";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { MdContactPhone, MdEmail } from "react-icons/md";
-import { FaYoutube } from "react-icons/fa";
+
 const Contact = () => {
   return (
     <div className="ContactContainer  bg-[#edeeff] pb-10 md:pb-0 lg:pb-0">
@@ -33,14 +34,8 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="ContactLeftSectionIcons">
-          {/* <a
-            href="https://www.facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={Faceboook} alt="facebook" className="w-12 h-12" />
-          </a> */}
+        <div className="ContactLeftSectionIcons gap-2">
+       
           <a
             href="https://www.google.com/search?q=seer+inc&sca_esv=998424606ab613e9&rlz=1C1RXQR_en-GBIN1072IN1072&ei=sm8GZ4GYK-KcseMP4bHwmAU&ved=0ahUKEwiBuYKvn4GJAxViTmwGHeEYHFMQ4dUDCA8&uact=5&oq=seer+inc&gs_lp=Egxnd3Mtd2l6LXNlcnAiCHNlZXIgaW5jMgsQABiABBiRAhiKBTIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEi3EFDlDFiJDnACeAGQAQCYAc0BoAGGA6oBBTAuMS4xuAEDyAEA-AEBmAIDoALOAcICChAAGLADGNYEGEeYAwCIBgGQBgiSBwMyLjGgB5UM&sclient=gws-wiz-serp"
             target="_blank"
@@ -59,9 +54,10 @@ const Contact = () => {
 
           <a
             href="https://www.youtube.com/@Seer-Inc"
-            className="flex items-center justify-center w-10 h-10 bg-red-600 rounded-full"
+             target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaYoutube className="text-white w-8 h-8" />
+            <img src={YouTube} alt="YouTube" className="w-12 h-12" />
           </a>
         </div>
       </div>
