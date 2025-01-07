@@ -1,7 +1,6 @@
-
 import React from "react";
 // import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 import "./index.css";
 import { MdContactPhone, MdEmail } from "react-icons/md";
 import { FaMapLocationDot } from "react-icons/fa6";
@@ -10,20 +9,23 @@ const HeroSection = ({ scrollToDemo }) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-   
     const formData = new FormData(e.target);
     const templateParams = {
       from_name: formData.get("name"), // Get name from form
       from_email: formData.get("email"), // Get email from form
       phone: formData.get("phone"), // Get phone from form (optional)
       message: formData.get("message"), // Get message from form
-      to_name: "Biswajit",
+      to_name: "Sales Team",
     };
 
     // EmailJS service, template, and public key
-    const serviceId = "service_6vre85n";
-    const templateId = "template_i4czdlk";
-    const publicKey = "q5kuONUVeDB8IDcCv";
+    // const serviceId = "service_6vre85n";
+    // const templateId = "template_i4czdlk";
+    // const publicKey = "q5kuONUVeDB8IDcCv";
+
+    const serviceId = "service_obe6chx";
+    const templateId = "template_q8lg02n";
+    const publicKey = "FZhMGf9IcnQFVIvPZ";
 
     emailjs.send(serviceId, templateId, templateParams, publicKey).then(
       (result) => {
