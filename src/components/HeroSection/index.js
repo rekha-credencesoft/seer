@@ -1,5 +1,4 @@
 import React from "react";
-// import React, { useRef } from 'react';
 import emailjs from "@emailjs/browser";
 import "./index.css";
 import { MdContactPhone, MdEmail } from "react-icons/md";
@@ -10,28 +9,39 @@ const HeroSection = ({ scrollToDemo }) => {
     e.preventDefault();
 
     const formData = new FormData(e.target);
+    const phone = formData.get("phone");
+    const email = formData.get("email");
+
+    const phoneRegex = /^[0-9]{9,15}$/;
+    if (phone && !phoneRegex.test(phone)) {
+      alert("Please enter a valid phone number (9-15 digits).");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
     const templateParams = {
-      from_name: formData.get("name"), // Get name from form
-      from_email: formData.get("email"), // Get email from form
-      phone: formData.get("phone"), // Get phone from form (optional)
-      message: formData.get("message"), // Get message from form
+      from_name: formData.get("name"),
+      from_email: email,
+      phone: phone,
+      message: formData.get("message"),
       to_name: "Sales Team",
     };
-
-    // EmailJS service, template, and public key
-    // const serviceId = "service_6vre85n";
-    // const templateId = "template_i4czdlk";
-    // const publicKey = "q5kuONUVeDB8IDcCv";
 
     const serviceId = "service_obe6chx";
     const templateId = "template_q8lg02n";
     const publicKey = "FZhMGf9IcnQFVIvPZ";
+    
 
     emailjs.send(serviceId, templateId, templateParams, publicKey).then(
       (result) => {
         console.log("Email sent successfully:", result.text);
         alert("Your message has been sent successfully!");
-        e.target.reset(); // Reset the form after submission
+        e.target.reset();
       },
       (error) => {
         console.error("Error in sending email:", error);
@@ -138,6 +148,7 @@ const HeroSection = ({ scrollToDemo }) => {
                   </button>
                 </div>
               </form>
+
             </div>
 
             <div className="w-full md:w-1/3 rightsection rounded-r-lg text-white">
