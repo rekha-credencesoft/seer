@@ -1,51 +1,46 @@
-import React from "react";
+import React, { useState } from "react";
+// import React, { useRef } from 'react';
 import emailjs from "@emailjs/browser";
 import "./index.css";
 import { MdContactPhone, MdEmail } from "react-icons/md";
 import { FaMapLocationDot } from "react-icons/fa6";
 
+import { serviceId, templateId, publicKey } from "../../configs/emailjs";
+
+import Submitbutton from "./../../components/Submitbutton/index.jsx";
+
 const HeroSection = ({ scrollToDemo }) => {
-  const handleFormSubmit = (e) => {
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
+  const [isFormSubmisionError, setIsFormSubmisionError] = useState(false);
+
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     const formData = new FormData(e.target);
-    const phone = formData.get("phone");
-    const email = formData.get("email");
-
-    const phoneRegex = /^[0-9]{9,15}$/;
-    if (phone && !phoneRegex.test(phone)) {
-      alert("Please enter a valid phone number (9-15 digits).");
-      return;
-    }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      alert("Please enter a valid email address.");
-      return;
-    }
-
     const templateParams = {
-      from_name: formData.get("name"),
-      from_email: email,
-      phone: phone,
-      message: formData.get("message"),
+      from_name: formData.get("name"), // Get name from form
+      from_email: formData.get("email"), // Get email from form
+      phone: formData.get("phone"), // Get phone from form (optional)
+      message: formData.get("message"), // Get message from form
       to_name: "Sales Team",
     };
 
-    const serviceId = "service_obe6chx";
-    const templateId = "template_q8lg02n";
-    const publicKey = "FZhMGf9IcnQFVIvPZ";
-    
+    setIsLoading(true);
 
     emailjs.send(serviceId, templateId, templateParams, publicKey).then(
       (result) => {
         console.log("Email sent successfully:", result.text);
-        alert("Your message has been sent successfully!");
-        e.target.reset();
+        // alert("Your message has been sent successfully!");
+        e.target.reset(); // Reset the form after submission
+
+        setIsLoading(false);
+        setIsFormSubmitted(true);
       },
       (error) => {
         console.error("Error in sending email:", error);
-        alert("Failed to send the message. Please try again.");
+        // alert("Failed to send the message. Please try again.");
+        setIsFormSubmisionError(true);
       }
     );
   };
@@ -135,20 +130,26 @@ const HeroSection = ({ scrollToDemo }) => {
                     cols="30"
                     className="w-full border p-2 rounded-lg"
                     rows="2"
-                    required
                   ></textarea>
                 </div>
                 <div className="pt-2 pb-6 submit">
-                  <button
+                  {/* <button
                     type="submit"
                     className="lg:text-lg text-white lg:bg-[#22bbff] lg:px-4 lg:py-1 lg:rounded-lg button"
                     style={{ fontFamily: "gothic-book, sans-serif" }}
                   >
                     Submit
-                  </button>
+                  </button> */}
+
+                  <Submitbutton
+                    completed={isFormSubmitted}
+                    error={isFormSubmisionError}
+                    // error={true}
+                    isLoading={isLoading}
+                    // isLoading={true}
+                  />
                 </div>
               </form>
-
             </div>
 
             <div className="w-full md:w-1/3 rightsection rounded-r-lg text-white">
