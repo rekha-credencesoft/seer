@@ -15,7 +15,7 @@ const Navbar = ({ setShowResponsiveNav, showResponsiveNav, responsiveNav }) => {
   return (
     <div className="NavbarContainer ">
       <div className="NavbarLogo  seer-logo">
-        <img src="/images/uploads/seer-logo-white.svg" alt="Logo" />
+        <img src="/images/uploads/Sapiensv2white_live.svg" alt="Logo" />
       </div>
       <ul className="NavbarLinks">
         <li className="NavbarLink">

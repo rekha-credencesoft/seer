@@ -155,7 +155,7 @@ const HeroSection = ({ scrollToDemo }) => {
             <div className="w-full md:w-1/3 rightsection rounded-r-lg text-white">
               <div className="grid place-content-center place-items-center grid-cols-1 justify-center items-center lg:pt-14 gap-8">
                 <a
-                  href="mailto:contact@seer-inc.com"
+                  href="mailto:enquires@sapiensv2.com"
                   className="flex flex-col items-center group"
                 >
                   <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-gray-200 transition duration-300 hover:bg-gray-300 cursor-pointer">
@@ -165,7 +165,7 @@ const HeroSection = ({ scrollToDemo }) => {
                     style={{ fontFamily: "roboto" }}
                     className="gmail inc text-white mt-2 lg:pl-0 text-center"
                   >
-                    contact@seer-inc.com
+                    enquires@sapiensv2.com
                   </p>
                 </a>
                 <a
@@ -195,7 +195,8 @@ const HeroSection = ({ scrollToDemo }) => {
                     style={{ fontFamily: "roboto" }}
                     className="text-white text-center gmail mt-1"
                   >
-                    Auckland, <br /> New Zealand
+                    Sapiensv2 Ltd Enfield street,
+                    Auckland, New Zealand
                   </p>
                 </a>
               </div>

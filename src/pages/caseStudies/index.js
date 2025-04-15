@@ -219,10 +219,10 @@ const CaseStudies = () => {
             style={{ fontFamily: "roboto" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
-            Glassons chose Seer to automate and improve outcomes for this manual
+            Glassons chose Sapiensv2 to automate and improve outcomes for this manual
             process. Each Sunday the store scans returns for the week. Using
-            Seer’s API, the returns are uploaded to the Seer cloud and analysed
-            by Stock Seer to determine the optimum selling stores, and propose
+            Sapiensv2’s API, the returns are uploaded to the Sapiensv2 cloud and analysed
+            by Stock Sapiensv2 to determine the optimum selling stores, and propose
             transfers accordingly.
           </p>
           <p
@@ -277,9 +277,9 @@ const CaseStudies = () => {
             style={{ fontFamily: "roboto" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16"
           >
-            Animates chose Seer to eliminate this complex manual process and
+            Animates chose Sapiensv2 to eliminate this complex manual process and
             optimize stock levels across their store network. We deployed Stock
-            Seer (Our proprietary A.I.) to determine optimal re-order points and
+            Sapiensv2 (Our proprietary A.I.) to determine optimal re-order points and
             safety stock levels that robustly factor seasonal fluctuations and
             planned promotions. Initial trials have shown the potential to save
             $6,000,000+, principally from reductions in working capital (excess
@@ -330,9 +330,9 @@ const CaseStudies = () => {
             style={{ fontFamily: "roboto" }}
             className="text-left text-lg leading-7 tracking-normal p-4 sm:ml-16 sm:mr-16 text-[#000000]"
           >
-            Once again, we deployed Stock Seer to automate this manual
+            Once again, we deployed Stock Sapiensv2 to automate this manual
             process generating an accurate, weekly sales forecast with seasonal
-            fluctuations and planned promotions accounted for. As with Animates,
+            fluctuations and planned promotions accounted for. As with Glassons,
             the forecast was used, in conjunction with standard business rules,
             to determine more sensible target stock levels and safety stock
             buffers, with respect to the predicted demand. Thus far, we have

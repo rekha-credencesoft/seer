@@ -16,7 +16,7 @@ const index = () => {
           cognitive limitations.
           <br />
           Cognisant of this and the research that has underpinned AI globally, we
-          embarked on creating Stock Seer and Seer Insights.
+          embarked on creating Stock Sapiensv2.
         </p>
         <MeetTheTeam />
       </div>

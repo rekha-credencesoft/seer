@@ -67,11 +67,11 @@ const Contact = () => {
             <span>Phone:</span> +6498892409
           </p>
           <p style={{ fontFamily: "roboto" }}>
-            <span>Address:</span> Auckland, New Zealand
+            <span>Address:</span>Sapiensv2 Ltd Enfield street, Auckland, New Zealand
           </p>
           <p style={{ fontFamily: "roboto", cursor: "pointer" }}>
             <span>Email:</span>{" "}
-            <a href="mailto:contact@seer-inc.com">contact@seer-inc.com</a>
+            <a href="mailto:enquires@sapiensv2.com">enquires@sapiensv2.com</a>
           </p>
         </div>
 
@@ -264,15 +264,15 @@ const Contact = () => {
           <div className="flex rightsec justify-center rounded-r-lg items-center">
             <div className="px-2 md:10 text-[10px] md:text-[15px] rounded-r-lg text-white flex flex-col justify-center items-center text-center h-full space-y-10 lg:space-y-20 md:space-y-14">
               <div className="flex flex-col items-center">
-                <a href="mailto:contact@seer-inc.com" className="text-white">
+                <a href="mailto:enquires@sapiensv2.com" className="text-white">
                   <MdEmail size={60} />
                 </a>
                 <p
                   style={{ fontFamily: "roboto" }}
                   className="pt-1 text-white text-[10px] md:text-[15px]"
                 >
-                  <a href="mailto:contact@seer-inc.com" className="text-white">
-                    contact@seer-inc.com
+                  <a href="mailto:enquires@sapiensv2.com" className="text-white">
+                    enquires@sapiensv2.com
                   </a>
                 </p>
               </div>
