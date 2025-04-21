@@ -332,7 +332,7 @@ const CaseStudies = () => {
           >
             Once again, we deployed Stock Sapiensv2 to automate this manual
             process generating an accurate, weekly sales forecast with seasonal
-            fluctuations and planned promotions accounted for. As with Glassons,
+            fluctuations and planned promotions accounted for. As Animates with Glassons
             the forecast was used, in conjunction with standard business rules,
             to determine more sensible target stock levels and safety stock
             buffers, with respect to the predicted demand. Thus far, we have

@@ -59,7 +59,7 @@ const Methodology = () => {
 
   return (
     <div>
-      <div className="w-full mx-auto mb-2 mb-2">
+      <div className="w-full mx-auto mb-2">
         <div className="w-full mx-auto max-w-screen-3xl">
           <div className="flex flex-col md:flex-row lg:flex-row gap-10 justify-center text-center relative">
             <div className="relative hidden md:block">
