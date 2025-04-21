@@ -195,8 +195,7 @@ const HeroSection = ({ scrollToDemo }) => {
                     style={{ fontFamily: "roboto" }}
                     className="text-white text-center gmail mt-1"
                   >
-                    Sapiensv2 Ltd Enfield street,
-                    Auckland, New Zealand
+                    Sapiensv2 Ltd Enfield street, Auckland, New Zealand
                   </p>
                 </a>
               </div>
@@ -207,12 +206,12 @@ const HeroSection = ({ scrollToDemo }) => {
 
       <div className="HeroSectionBgImg">
         <img
-          src="https://bookonelocal.in/cdn/Seer_Oracle.svg"
+          src="https://bookonelocal.in/cdn/Stock_Seer_Oracle.svg"
           alt="hero"
           className="desktop-image"
         />
         <img
-          src="https://bookonelocal.in/cdn/Seer_Oracle_phone.svg"
+          src="https://bookonelocal.in/cdn/Seer_phone.svg"
           alt="hero"
           className="mobile-image"
         />
